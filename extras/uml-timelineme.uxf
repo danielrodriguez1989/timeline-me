@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>470</x>
+      <y>110</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Agente
+--
+id: Long;
+nombre: String;
+
+miEmpresa: Empresa;
+empresaQueSigo: List;
+--
+buscarEmpresa()
+seguirEmpresa()
+dejarDeSeguirEmpresa(Long)
+publicar()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>170</x>
+      <y>110</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Empresa
+--
+id: Long;
+razonSocial: String;
+--
+darAltaAgente(Long)
+darBajaAgente(Long)
+modificarAgente(Long)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>100</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;;
+m1=n
+m2=1
+trabaja en
+</panel_attributes>
+    <additional_attributes>120;50;30;50</additional_attributes>
+  </element>
+</diagram>

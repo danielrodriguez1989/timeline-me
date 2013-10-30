@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>170</x>
+      <y>120</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Empresa
+--
+id: long;
+razonSocial: String;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>640</x>
+      <y>120</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Agente
+--
+id: Long;
+nombre: String;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>80</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+&lt;Trabaja en</panel_attributes>
+    <additional_attributes>30;50;290;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>350</x>
+      <y>120</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=n
+&lt;sigue a</panel_attributes>
+    <additional_attributes>30;50;290;50</additional_attributes>
+  </element>
+</diagram>
