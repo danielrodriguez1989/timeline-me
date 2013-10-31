@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
   <zoom_level>10</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
@@ -10,7 +11,7 @@
     </coordinates>
     <panel_attributes>Empresa
 --
-id: long;
+id: Long;
 razonSocial: String;</panel_attributes>
     <additional_attributes/>
   </element>
@@ -56,5 +57,63 @@ m1=n
 m2=n
 &lt;sigue a</panel_attributes>
     <additional_attributes>30;50;290;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>390</x>
+      <y>370</y>
+      <w>210</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>Publicacion
+--
+id: Long;
+fecha: Date;
+descripcion: String;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>220</x>
+      <y>170</y>
+      <w>190</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+tiene
+</panel_attributes>
+    <additional_attributes>30;30;170;200</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>540</x>
+      <y>170</y>
+      <w>160</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+es seguida por</panel_attributes>
+    <additional_attributes>30;200;140;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>570</x>
+      <y>170</y>
+      <w>290</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=n
+m2=1
+publica</panel_attributes>
+    <additional_attributes>30;280;270;30</additional_attributes>
   </element>
 </diagram>
