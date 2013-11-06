@@ -8,12 +8,4 @@ public class Agente {
 	private Long miEmpresa;
 	//private <List> empresaQueSigo;
 	
-	public Agente(String nombre,String password,Long miEmpresa){
-		
-		this.nombre=nombre;
-		this.password=password;
-		this.miEmpresa=miEmpresa;
-		
-	}
-
 }

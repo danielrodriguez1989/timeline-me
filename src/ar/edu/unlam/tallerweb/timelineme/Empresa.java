@@ -5,11 +5,12 @@ public class Empresa {
 	private Long id;
 	private String razonSocial;
 	
-	public void darAltaAgente(String nombre, String password){
-		
-		Agente agente = new Agente(nombre,password,this.id);
-		
+	public Long getId() {
+		return id;
 	}
-	
+
+	public String getRazonSocial() {
+		return razonSocial;
+	}
 
 }
