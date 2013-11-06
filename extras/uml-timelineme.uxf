@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
-  <zoom_level>10</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>630</x>
-      <y>110</y>
-      <w>230</w>
-      <h>190</h>
+      <x>588</x>
+      <y>96</y>
+      <w>276</w>
+      <h>132</h>
     </coordinates>
-    <panel_attributes>Agente
+    <panel_attributes>&lt;&lt;Individuo&gt;&gt;
 --
 id: Long;
 nombre: String;
 password: String;
 miEmpresa: Empresa;
-empresaQueSigo: List;
 --
-buscarEmpresa()
-seguirEmpresa()
-dejarDeSeguirEmpresa(Long)
-publicar()
 
 </panel_attributes>
     <additional_attributes/>
@@ -27,43 +22,41 @@ publicar()
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>170</x>
-      <y>110</y>
-      <w>210</w>
-      <h>190</h>
+      <x>0</x>
+      <y>108</y>
+      <w>252</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>Empresa
 --
 id: Long;
 razonSocial: String;
 --
-darAltaAgente(nombre: String, password: String, miEmpresa: Empresa, )
-darBajaAgente(Long)
-modificarAgente(Long)</panel_attributes>
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>350</x>
-      <y>100</y>
-      <w>300</w>
-      <h>70</h>
+      <x>216</x>
+      <y>96</y>
+      <w>396</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;;
 m1=n
 m2=1
 trabaja en
 </panel_attributes>
-    <additional_attributes>280;50;30;50</additional_attributes>
+    <additional_attributes>372;60;36;60</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
     <coordinates>
-      <x>390</x>
-      <y>360</y>
-      <w>210</w>
-      <h>190</h>
+      <x>0</x>
+      <y>324</y>
+      <w>252</w>
+      <h>228</h>
     </coordinates>
     <panel_attributes>Publicacion
 --
@@ -78,15 +71,97 @@ agentePublicador: Agente;
   <element>
     <type>com.umlet.element.Relation</type>
     <coordinates>
-      <x>570</x>
-      <y>270</y>
-      <w>180</w>
-      <h>170</h>
+      <x>216</x>
+      <y>336</y>
+      <w>216</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;;
 m1=n
 m2=1
 publica en</panel_attributes>
-    <additional_attributes>30;150;160;30</additional_attributes>
+    <additional_attributes>36;60;192;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>408</x>
+      <y>336</y>
+      <w>300</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>Agente
+--
+empresaQueSigo: List;
+--
+buscarEmpresa()
+seguirEmpresa()
+dejarDeSeguirEmpresa(Long)
+publicar()
+llamarPublicacion(empresaQueSigo)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>768</x>
+      <y>336</y>
+      <w>276</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Administrador
+--
+.
+--
+darAltaAgente(nombre: String, password: String, miEmpresa: Empresa, )
+darBajaAgente(Agente)
+modificarAgente(Agente)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>192</y>
+      <w>60</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>36;36;36;96</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>468</x>
+      <y>252</y>
+      <w>432</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>36;36;408;36</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>840</x>
+      <y>252</y>
+      <w>60</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>36;36;36;84</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>468</x>
+      <y>252</y>
+      <w>60</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>36;36;36;84</additional_attributes>
   </element>
 </diagram>
