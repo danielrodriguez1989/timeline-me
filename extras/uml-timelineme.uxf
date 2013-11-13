@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="11.3">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.1">
   <zoom_level>12</zoom_level>
   <element>
     <type>com.umlet.element.Class</type>
@@ -71,7 +72,7 @@ emplea un
     <panel_attributes>Publicacion
 --
 idPublicacion: Long;
-fecha: date;
+fecha: String;
 comentario: String;
 --
 </panel_attributes>

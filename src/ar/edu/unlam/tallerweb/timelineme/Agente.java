@@ -8,7 +8,7 @@ public class Agente {
 	//private <List> empresaQueSigo;
 	//private <List> publicacionesQueHago;
 	
-	
+	/*
 	public buscarEmpresa(){
 		
 	}
@@ -28,4 +28,6 @@ public class Agente {
 	public llamarPublicacion(<List> empresaQueSigo){
 		
 	}
+	*/
+	
 }
